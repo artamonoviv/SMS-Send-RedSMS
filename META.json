@@ -56,6 +56,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/artamonoviv/SMS-Send-RedSMS/issues"
+      },
+      "homepage" : "https://github.com/artamonoviv/SMS-Send-RedSMS",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/artamonoviv/SMS-Send-RedSMS.git",
+         "web" : "https://github.com/artamonoviv/SMS-Send-RedSMS"
+      }
+   },
    "version" : "0.001",
    "x_contributors" : [
       "Ivan Artamonov <ivan.s.artamonov@gmail.com>"
