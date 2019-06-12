@@ -86,10 +86,7 @@ sub status
 
     if(!$error_code && $response)
     {
-        foreach (grep {ref($response->{$_}) eq 'HASH'} keys %{$response})#todo
-        {
-            $status{$_}=1 if($response->{$_}->{status} eq "deliver");
-        }
+        map {$status{$_}=1} grep {ref($response->{$_}) eq 'HASH' && $response->{$_}->{status} eq "deliver"} keys %{$response};
     }
     else
     {
